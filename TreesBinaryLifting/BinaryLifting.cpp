@@ -2,13 +2,14 @@
 #include<bits/stdc++.h>
 using namespace std;
 
-class TreeAncestor {
+class BinaryLifting {
 
 private:
     int n, cols;
     vector<vector<int>> up;
 public:
-     TreeAncestor(int n, vector<int>& parent) {
+     BinaryLifting
+    (int n, vector<int>& parent) {
 
         this->cols = log2(n);
         this->n = n;
@@ -63,7 +64,8 @@ int main() {
        cin >> parent[i];
    }
    
-   TreeAncestor t(n,parent);
+   BinaryLifting
+ t(n,parent);
    while(q--) {
        
        int node, k;

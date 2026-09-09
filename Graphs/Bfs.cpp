@@ -6,15 +6,10 @@ using namespace std;
 
 void bfs (vector <int> adjM[], int source, int v){
 
-
     vector <int> visited (v + 1);
-
     queue <int> q;
     q.push(source);
     visited[source] = 1;
-
-
-
     while (!q.empty()){
         
         int top = q.front();
@@ -50,8 +45,7 @@ int main(){
     int V,E;
     cin >> V >> E;
 
-    vector <int> adj [V + 1];
-
+    vector <int> adj[V + 1];
     for (int i = 0; i < E; i++){
         int v, u;
         cin >> v >> u;

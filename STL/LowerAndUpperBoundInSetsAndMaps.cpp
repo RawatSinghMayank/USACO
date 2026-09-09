@@ -69,8 +69,8 @@ int main (){
 
     cin >> find;
     map <int,int> :: iterator nig = hash.lower_bound(find);
-  
-
+    
+    
     if (nig == hash.end()){
         cout << "NO" <<endl;
     }else{

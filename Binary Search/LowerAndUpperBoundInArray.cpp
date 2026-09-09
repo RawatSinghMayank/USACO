@@ -31,7 +31,7 @@ int main(){
 	int index1 = lower_bound (arr.begin(), arr.end(),target) - arr.begin();
 	vector <int> :: iterator it = lower_bound (arr.begin(), arr.end(), target);
 	
-	cout << index1 << " "<< " " << *it << "\n";
-
+	cout << index1 << " "<< " " << *it << "\n";	
+	
     return 0;
 }

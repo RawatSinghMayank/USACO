@@ -1,0 +1,2 @@
+all codes are on notion marked as question on gfg or leetcode
+.go there to revise.

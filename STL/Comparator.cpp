@@ -1,6 +1,8 @@
 #include <bits/stdc++.h>
 using namespace std;
-
+//see lambda folder 
+//use lambda in comparator 
+//go to lamda folder fast
 void print (vector <long long> &nums){
 
 
@@ -21,7 +23,8 @@ bool shoudISwap (long long first, long long second){
 
 bool shouldISwap2 (pair <long long,long long> &first, pair <long long,long long> &second){
 
-    // sort in ascending order : if first of both is
+    // sort in ascending order : 
+    // if first of both is
    // same then sort second in descending order
     if (first.first != second.first){
         if (first.first > second.first){
@@ -48,22 +51,16 @@ void print2 (vector <pair <long long,long long>>& nums){
 }
 
 bool comparator (pair <long long, long long> &first, pair <long long, long long> &second){
-    // comparator works in reverse fashion in inbulit sorting function so trick to learn is -> in which order you want to sort return true in that order. see example
+    // comparator works in reverse fashion in inbulit sorting function so trick to learn is 
+    //if you want to swap then return false .
+    // -> trick to learn :the order you want to sort return true in that order. see example
 
     if (first.first != second.first){
 
-        if (first.first < second.first){
-            return true;
-        }else{
-            return false;
-        }
+        return first.first < second.first;
     }else{
 
-        if (first.second > second.second){
-            return true;
-        }else{
-            return false;
-        }
+        return first.second > second.second;
     }
 }
 
@@ -74,7 +71,7 @@ int main(){
     cin >> len;
 
 
-    vector <long long> nums (len);
+    vector<long long> nums (len);
 
     for (long long i = 0; i < len; i++){
         cin >> nums[i];

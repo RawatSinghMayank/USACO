@@ -3,15 +3,16 @@
 #include <string>
 using namespace std;
 // t.c - O(log(n))
-void print(multiset <int>& nums){
+void print(multiset<int>& nums){
     for (auto it : nums){   
         cout << it << " ";
     }
     cout << endl;
 }
+
 int main(){
 
-    multiset <int> nums;
+    multiset<int> nums;
 
     nums.insert(100);
     nums.insert(200);

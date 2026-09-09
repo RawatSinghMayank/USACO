@@ -1,0 +1,53 @@
+#include <bits/stdc++.h>
+using namespace std;
+int main()
+{
+    vector<int> v = {3, 1, 2, 7, 4, 6, 2, 3}; // ans={-1,3,3,-1,7,7,6,6}
+
+    int n = v.size();
+    vector<int> ans(n, -1);
+    // for (int i = 1; i < n; i++)
+    // {
+    //     for (int j = i - 1; j >= 0; j--)     brute force
+    //     {
+    //         if (v[j] > v[i])
+    //         {
+    //             ans[i] = v[j];
+    //             break;
+    //         }
+    //     }
+    // }
+
+    // reverse(v.begin(), v.end());
+    // 2nd method
+    // stack<int> st;
+    // st.push(v[n - 1]);
+    // for (int i = n - 2; i >= 0; i--)
+    // {
+    //     while (st.size() && st.top() <= v[i])
+    //     {
+    //         st.pop();
+    //     }
+    //     if (st.size())
+    //         ans[i] = st.top();
+    //     st.push(v[i]);
+    // }
+    // reverse(ans.begin(), ans.end());s
+    stack<int> st;
+    st.push(v[0]);
+    for (int i = 1; i < n; i++)
+    {
+        while (st.size() && st.top() <= v[i])
+        {
+            st.pop();
+        }
+        if (st.size())
+            ans[i] = st.top();
+        st.push(v[i]);
+    }
+
+    for (int i = 0; i < n; i++)
+        cout << ans[i] << " ";
+    return 0;
+    return 0;
+}

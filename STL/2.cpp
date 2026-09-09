@@ -10,6 +10,7 @@ bool comparator (pair <long long, long long> &first, pair <long long, long long>
 	}
 }
 
+
 void solve(){
 
 	long long noOfSwords, noOfMonsters;

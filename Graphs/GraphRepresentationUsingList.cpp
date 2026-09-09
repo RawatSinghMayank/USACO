@@ -89,7 +89,6 @@ int main (){
    vector <int> adjM[v + 1];
    vector <vector <int>> adjM2(v + 1);
 
- 
     for (int i = 0; i< e; i++){
         
         int u,v;
